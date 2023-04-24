@@ -49,7 +49,7 @@ jobs:
         os: [macos-m1-self-hosted]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.rust_build_branch }}
       - name: Set up Python

@@ -72,7 +72,7 @@ jobs:
           podman stop rust-linux || echo "ok"
           podman container rm rust-linux || echo "Container name rust-linux is available"
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Build construction container
         run: |
           cd support/rust-build/${{ github.event.inputs.rust_target }}

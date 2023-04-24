@@ -67,9 +67,9 @@ jobs:
             ASSET_CONTENT_TYPE: "application/x-tar"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Checkout repository - esp-rs/rust
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: rust
           repository: esp-rs/rust
